@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Coches</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>CRUD Coches</h1>
+
+    <h2>Ver Coches</h2>
+    <button onclick="verTodos()">Ver todos</button>
+
+    <h2>Ver uno</h2>
+    <input type="number" id="idBuscar" placeholder="ID " />
+    <button onclick="verUno()">Buscar</button>
+
+    <h2>Agregar Coche</h2>
+    <input type="text" id="modelo" placeholder="Modelo" />
+    <input type="number" id="anio" placeholder="Año" />
+    <input type="number" id="precio" placeholder="Precio" />
+    <input type="number" id="marcaId" placeholder="ID de la marca" />
+    <button onclick="anadir()">Añadir</button>
+
+    <h2>Borrar Coche</h2>
+    <input type="number" id="idBorrar" placeholder="ID " />
+    <button onclick="borrar()">Borrar</button>
+
+    <h2>Modificar</h2>
+    <input type="number" id="idModificar" placeholder="id del coche " />
+    <input type="text" id="modeloModificar" placeholder="Modelo" />
+    <input type="number" id="anioModificar" placeholder="Año" />
+    <input type="number" id="precioModificar" placeholder="Precio" />
+    <input type="number" id="marcaIdModificar" placeholder="ID de la marca" />
+    <button onclick="modificar()">Modificar</button>
+
+    <p id="mensaje"></p>
+    <div id="listado"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
